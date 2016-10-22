@@ -1,0 +1,27 @@
+{%- macro datetime(comment) -%}{{ comment.created_at.strftime('%Y-%m-%d %H:%M:%S') }}{%- endmacro -%}
+{%- macro id(comment) -%}{{ comment.short_url.split('/')[-1] }}{%- endmacro -%}
+{%- macro time_tag(datetime) -%}<time datetime="{{ datetime }}">{{ datetime }}</time>{%- endmacro -%}
+{%- macro verbatim_link(link) -%}<a target="_blank" href="{{ link }}">{{ link }}</a>{%- endmacro -%}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MrMarchive {{ date }}</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../../../css/style.css">
+</head>
+<body>
+  <h1><a href="../../../" class="root-link">MrMarchive</a> {{ date }}</h1>
+  <p>{{ comments|length }} {% if comments|length == 1 %}comment{% else %}comments{% endif %}.</p>
+  <hr>
+  {% for comment in comments -%}
+  <div id="{{ id(comment) }}">
+    <a href="#{{ id(comment) }}">{{ time_tag(datetime(comment)) }}</a>, {{ verbatim_link(comment.short_url) }}
+    <pre>{{ comment.body }}</pre>
+  </div>
+  <hr>
+  {% endfor -%}
+</body>
+</html>
+{#- Local Variables: -#}
+{#- mode: jinja2 -#}
+{#- End: -#}

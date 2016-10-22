@@ -1,0 +1,3 @@
+[submodule ".scripts/MrMsay"]
+	path = .scripts/MrMsay
+	url = https://github.com/janeappleseed/MrMsay.git

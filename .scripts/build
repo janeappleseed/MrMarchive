@@ -1,0 +1,3 @@
+#!/usr/bin/env zsh
+here=$0:A:h
+PYTHONPATH=$here/MrMsay/src:$PYTHONPATH $here/utils/build.py

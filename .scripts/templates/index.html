@@ -1,0 +1,27 @@
+{%- macro date_link(date) -%}{{ date.replace('-', '/') }}/{%- endmacro -%}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MrMarchive</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <h1>MrMarchive</h1>
+  <p>Browse MrM's wisdom in the most compact manner.</p>
+  <p>Aggregated by <a target="_blank" href="https://github.com/janeappleseed/MrMsay">mrmd(1)</a>.</p>
+  <hr>
+  <ul>
+    <li><a href="latest/">Latest</a> (30)</li>
+  </ul>
+  <p>By date:</p>
+  <ul>
+  {% for date, count in dates -%}
+    <li><a href="{{ date_link(date) }}">{{ date }}</a> ({{ count }})</li>
+  {% endfor -%}
+  </ul>
+</body>
+</html>
+{#- Local Variables: -#}
+{#- mode: jinja2 -#}
+{#- End: -#}
