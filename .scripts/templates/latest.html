@@ -14,7 +14,7 @@
   {% for comment in comments -%}
   <div id="{{ id(comment) }}">
     <a href="#{{ id(comment) }}">{{ time_tag(datetime(comment)) }}</a>, {{ verbatim_link(comment.short_url) }}
-    <pre>{{ comment.body }}</pre>
+    <pre>{{ comment.body.replace('\r', '') }}</pre>
   </div>
   <hr>
   {% endfor -%}
