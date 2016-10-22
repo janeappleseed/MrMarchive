@@ -1,4 +1,5 @@
 {%- macro day(date) -%}{{ date.split('-')[-1] }}{%- endmacro -%}
+{%- macro linked_month(month) -%}{%- set year, month = month.split('-') -%}<a href="../" class="undecorated">{{ year }}</a>-{{ month }}{%- endmacro -%}
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="../../css/style.css">
 </head>
 <body>
-  <h1><a href="../../" class="root-link">MrMarchive</a> {{ month }}</h1>
+  <h1><a href="../../" class="undecorated">MrMarchive</a> {{ linked_month(month) }}</h1>
   <ul>
   {% for date, count in dates -%}
     <li><a href="{{ day(date) }}/">{{ date }}</a> ({{ count }})</li>

@@ -1,5 +1,6 @@
 {%- macro datetime(comment) -%}{{ comment.created_at.strftime('%Y-%m-%d %H:%M:%S') }}{%- endmacro -%}
 {%- macro id(comment) -%}{{ comment.short_url.split('/')[-1] }}{%- endmacro -%}
+{%- macro linked_date(date) -%}{%- set year, month, day = date.split('-') -%}<a href="../../" class="undecorated">{{ year }}</a>-<a href="../" class="undecorated">{{ month }}</a>-{{ day }}{%- endmacro -%}
 {%- macro time_tag(datetime) -%}<time datetime="{{ datetime }}">{{ datetime }}</time>{%- endmacro -%}
 {%- macro verbatim_link(link) -%}<a target="_blank" href="{{ link }}">{{ link }}</a>{%- endmacro -%}
 <!DOCTYPE html>
@@ -10,7 +11,7 @@
   <link rel="stylesheet" type="text/css" href="../../../css/style.css">
 </head>
 <body>
-  <h1><a href="../../../" class="root-link">MrMarchive</a> {{ date }}</h1>
+  <h1><a href="../../../" class="undecorated">MrMarchive</a> {{ linked_date(date) }}</h1>
   <p>{{ comments|length }} {% if comments|length == 1 %}comment{% else %}comments{% endif %}.</p>
   <hr>
   {% for comment in comments -%}

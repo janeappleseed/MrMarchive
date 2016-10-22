@@ -14,7 +14,7 @@ a {
     text-decoration: underline;
 }
 
-a.root-link {
+a.undecorated {
     text-decoration: none;
 }
 
