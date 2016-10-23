@@ -4,5 +4,8 @@ root=$here/..
 PYTHONPATH=$here/MrMsay/src:$PYTHONPATH $here/utils/build.py
 [[ $1 == '--no-commit' ]] && exit 0
 date=$(date -u +%Y-%m-%dT%H:%M:%SZ)
-GIT_CONFIG_NO_SYSTEM=1 HOME=~/.cache/mrmsay XDG_CONFIG_HOME=~/.cache/mrmsay \
-    git -C $root commit --all --no-verify --message="$date rebuild"
+export GIT_CONFIG_NO_SYSTEM=1
+export HOME=~/.cache/mrmsay
+export XDG_CONFIG_HOME=~/.cache/mrmsay
+git -C $root add --all
+git -C $root commit --all --no-verify --message="$date rebuild"
