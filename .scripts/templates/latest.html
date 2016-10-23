@@ -15,7 +15,7 @@
   <h1><a href="../" class="undecorated">MrMarchive</a> latest</h1>
   {% for comment in comments -%}
   <div id="{{ id(comment) }}">
-    <a href="#{{ id(comment) }}">{{ time_tag(datetime(comment)) }}</a> (<a href="{{ permalink(comment) }}">permalink</a>), {{ verbatim_link(comment.short_url) }}
+    <a href="#{{ id(comment) }}">{{ time_tag(datetime(comment)) }}</a> (<a target="_blank" href="{{ permalink(comment) }}">permalink</a>), {{ verbatim_link(comment.short_url) }}
     <pre>{{ comment.body.replace('\r', '') }}</pre>
   </div>
   <hr>
