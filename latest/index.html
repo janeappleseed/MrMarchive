@@ -7,168 +7,180 @@
 </head>
 <body>
   <h1><a href="../" class="undecorated">MrMarchive</a> latest</h1>
-  <div id="vPFyS">
-    <a href="#vPFyS"><time datetime="2016-10-22 11:11:29">2016-10-22 11:11:29</time></a>, <a target="_blank" href="https://git.io/vPFyS">https://git.io/vPFyS</a>
-    <pre>Checked it out and it doesn't quite do what I want so sticking with this simpler version and changed the name to `brew release-notes` so it's clearer what it's being used for (not a changelog).</pre>
+  <div id="vPbXk">
+    <a href="#vPbXk"><time datetime="2016-10-23 11:24:45">2016-10-23 11:24:45</time></a>, <a target="_blank" href="https://git.io/vPbXk">https://git.io/vPbXk</a>
+    <pre>We don't package header-only C++ libraries, sorry!</pre>
   </div>
   <hr>
-  <div id="vPFyy">
-    <a href="#vPFyy"><time datetime="2016-10-22 10:53:49">2016-10-22 10:53:49</time></a>, <a target="_blank" href="https://git.io/vPFyy">https://git.io/vPFyy</a>
-    <pre>> before merging test suites.
+  <div id="vPbXI">
+    <a href="#vPbXI"><time datetime="2016-10-23 11:24:06">2016-10-23 11:24:06</time></a>, <a target="_blank" href="https://git.io/vPbXI">https://git.io/vPbXI</a>
+    <pre>@kontrafiktion Could you try and open a pull request? [This document](https://github.com/Homebrew/brew/blob/master/docs/How-To-Open-a-Homebrew-Pull-Request-(and-get-it-merged).md#how-to-open-a-homebrew-pull-request-and-get-it-merged) should help and I'm happy to walk you through anything else.
 
-Can you detail a bit how you're planning on doing this? Of particular concern is that Cask's test suite is in RSpec and MiniTest and takes almost twice as long to run.</pre>
+Thanks!</pre>
   </div>
   <hr>
-  <div id="vPFy1">
-    <a href="#vPFy1"><time datetime="2016-10-22 10:50:09">2016-10-22 10:50:09</time></a>, <a target="_blank" href="https://git.io/vPFy1">https://git.io/vPFy1</a>
-    <pre>String interpolation makes more sense to me here. Additionally, this should live in Cask's test_helper or similar as `fixture_url` and cask-specific fixtures should live in `test/fixtures/cask/`</pre>
-  </div>
-  <hr>
-  <div id="vPFyM">
-    <a href="#vPFyM"><time datetime="2016-10-22 10:49:15">2016-10-22 10:49:15</time></a>, <a target="_blank" href="https://git.io/vPFyM">https://git.io/vPFyM</a>
-    <pre>`HOMEBREW_TEST_FIXTURES` as a constant should be sufficient and can be joined with `/` rather than needing a new method and class defined.</pre>
-  </div>
-  <hr>
-  <div id="vPFyD">
-    <a href="#vPFyD"><time datetime="2016-10-22 10:46:37">2016-10-22 10:46:37</time></a>, <a target="_blank" href="https://git.io/vPFyD">https://git.io/vPFyD</a>
-    <pre>Please try to `brew reinstall pcre; brew reinstall suricata` . Thanks!</pre>
-  </div>
-  <hr>
-  <div id="vPdxJ">
-    <a href="#vPdxJ"><time datetime="2016-10-21 10:21:50">2016-10-21 10:21:50</time></a>, <a target="_blank" href="https://git.io/vPdxJ">https://git.io/vPdxJ</a>
-    <pre>> https://git.io/brew-troubleshooting
+  <div id="vPbXL">
+    <a href="#vPbXL"><time datetime="2016-10-23 11:23:16">2016-10-23 11:23:16</time></a>, <a target="_blank" href="https://git.io/vPbXL">https://git.io/vPbXL</a>
+    <pre>> Removing --disable-debug seems to make sense. Given the minimal cost, that would make the bottled library more flexible, and it seems to be the way that wxmac upstream expects you to do things, so we may as well conform.
+> 
+> Would like the hear from another maintainer or two before doing so, though.
 
-Read this and report it to Homebrew/homebrew-nginx.</pre>
-  </div>
-  <hr>
-  <div id="vPdxf">
-    <a href="#vPdxf"><time datetime="2016-10-21 07:43:56">2016-10-21 07:43:56</time></a>, <a target="_blank" href="https://git.io/vPdxf">https://git.io/vPdxf</a>
-    <pre>Sorry about that. Please consider [creating your own tap](https://github.com/Homebrew/brew/blob/master/docs/How-to-Create-and-Maintain-a-Tap.md#how-to-create-and-maintain-a-tap). Thanks!</pre>
-  </div>
-  <hr>
-  <div id="vPdxv">
-    <a href="#vPdxv"><time datetime="2016-10-21 07:25:10">2016-10-21 07:25:10</time></a>, <a target="_blank" href="https://git.io/vPdxv">https://git.io/vPdxv</a>
-    <pre>What happens if you run it outside RVM? It's likely RVM is setting variables that break our setup. We'd accept a pull request to fix that.</pre>
-  </div>
-  <hr>
-  <div id="vPdAh">
-    <a href="#vPdAh"><time datetime="2016-10-20 13:28:41">2016-10-20 13:28:41</time></a>, <a target="_blank" href="https://git.io/vPdAh">https://git.io/vPdAh</a>
-    <pre>Think it's probably worth `uninstall -f`ing before this as otherwise we're not testing a clean install.</pre>
-  </div>
-  <hr>
-  <div id="vPdAj">
-    <a href="#vPdAj"><time datetime="2016-10-20 13:27:46">2016-10-20 13:27:46</time></a>, <a target="_blank" href="https://git.io/vPdAj">https://git.io/vPdAj</a>
-    <pre>Good idea, thanks!</pre>
-  </div>
-  <hr>
-  <div id="vPdxe">
-    <a href="#vPdxe"><time datetime="2016-10-20 13:27:11">2016-10-20 13:27:11</time></a>, <a target="_blank" href="https://git.io/vPdxe">https://git.io/vPdxe</a>
-    <pre>Sorry, very likely to pass on this as the intention is to remove `linkapps` support from Homebrew at some point in the future.</pre>
-  </div>
-  <hr>
-  <div id="vPdAp">
-    <a href="#vPdAp"><time datetime="2016-10-20 11:30:57">2016-10-20 11:30:57</time></a>, <a target="_blank" href="https://git.io/vPdAp">https://git.io/vPdAp</a>
-    <pre>> Have taken to starting all brew related processes with 'sudo brew services' rather than directly with launchctl.
+Sounds good to me. Could you try and open a pull request? [This document](https://github.com/Homebrew/brew/blob/master/docs/How-To-Open-a-Homebrew-Pull-Request-(and-get-it-merged).md#how-to-open-a-homebrew-pull-request-and-get-it-merged) should help and I'm happy to walk you through anything else.
 
-That is a very bad idea; you're going to end up running a lot of services as `root` that need not be and, at least in this case, are accessible to the network.
+Thanks!</pre>
+  </div>
+  <hr>
+  <div id="vPbXt">
+    <a href="#vPbXt"><time datetime="2016-10-23 11:23:02">2016-10-23 11:23:02</time></a>, <a target="_blank" href="https://git.io/vPbXt">https://git.io/vPbXt</a>
+    <pre>> If you really want to enable PSD support despite this, you can modify your local graphicsmagick.rb formula to add --enable-broken-codecs to the configure options. But I don't think we want to make that available in the core formula.
 
-> Upon login to system apache fails to start - always.
+Agreed, sorry!</pre>
+  </div>
+  <hr>
+  <div id="vPbXq">
+    <a href="#vPbXq"><time datetime="2016-10-23 11:22:37">2016-10-23 11:22:37</time></a>, <a target="_blank" href="https://git.io/vPbXq">https://git.io/vPbXq</a>
+    <pre>@mok0 Try to `brew reinstall librsvg emacs`</pre>
+  </div>
+  <hr>
+  <div id="vPbXm">
+    <a href="#vPbXm"><time datetime="2016-10-23 11:21:18">2016-10-23 11:21:18</time></a>, <a target="_blank" href="https://git.io/vPbXm">https://git.io/vPbXm</a>
+    <pre>A known issue unfortunately that this doesn't work on 10.12: https://github.com/Homebrew/homebrew-core/issues/5488</pre>
+  </div>
+  <hr>
+  <div id="vPbXY">
+    <a href="#vPbXY"><time datetime="2016-10-23 11:19:48">2016-10-23 11:19:48</time></a>, <a target="_blank" href="https://git.io/vPbXY">https://git.io/vPbXY</a>
+    <pre>> If we decided to do something about this, it would be preferable to get this fixed upstream (make macdeployqt a bit more flexible regarding what paths it understands)
 
-This is likely related to `sudo brew services start` which starts on system start rather than user login. Resources that may be required may not be available.</pre>
-  </div>
-  <hr>
-  <div id="vPdAx">
-    <a href="#vPdAx"><time datetime="2016-10-20 11:20:43">2016-10-20 11:20:43</time></a>, <a target="_blank" href="https://git.io/vPdAx">https://git.io/vPdAx</a>
-    <pre>> Create as many bottles as necessary and as possible.
+This sounds like the best option.
 
-We do already.</pre>
-  </div>
-  <hr>
-  <div id="vP7zZ">
-    <a href="#vP7zZ"><time datetime="2016-10-20 08:29:01">2016-10-20 08:29:01</time></a>, <a target="_blank" href="https://git.io/vP7zZ">https://git.io/vP7zZ</a>
-    <pre>@ilovezfs I never did care, personally 😉.</pre>
-  </div>
-  <hr>
-  <div id="vPdAN">
-    <a href="#vPdAN"><time datetime="2016-10-20 08:11:01">2016-10-20 08:11:01</time></a>, <a target="_blank" href="https://git.io/vPdAN">https://git.io/vPdAN</a>
-    <pre>`grep` for `caveats` or `post_install` for example usage. </pre>
-  </div>
-  <hr>
-  <div id="vP7Gx">
-    <a href="#vP7Gx"><time datetime="2016-10-20 08:07:08">2016-10-20 08:07:08</time></a>, <a target="_blank" href="https://git.io/vP7Gx">https://git.io/vP7Gx</a>
-    <pre>@ilovezfs Given it's GitHub hosted I think it's fine to not expect upstreams take the extra step of publishing release tarballs.</pre>
-  </div>
-  <hr>
-  <div id="vPdAA">
-    <a href="#vPdAA"><time datetime="2016-10-20 08:06:46">2016-10-20 08:06:46</time></a>, <a target="_blank" href="https://git.io/vPdAA">https://git.io/vPdAA</a>
-    <pre>Can this test be modified to do something more substantial than e.g. `--version` or `--help`? See `cmake.rb` for an example of an application formula with a good test and `tinyxml2.rb` for an example of a library formula with a good test. Thanks!</pre>
-  </div>
-  <hr>
-  <div id="vP7zl">
-    <a href="#vP7zl"><time datetime="2016-10-20 07:40:56">2016-10-20 07:40:56</time></a>, <a target="_blank" href="https://git.io/vP7zl">https://git.io/vP7zl</a>
-    <pre>@a1dutch You can use a Git checkout with the Homebrew formula, too.</pre>
-  </div>
-  <hr>
-  <div id="vPdAb">
-    <a href="#vPdAb"><time datetime="2016-10-20 07:40:04">2016-10-20 07:40:04</time></a>, <a target="_blank" href="https://git.io/vPdAb">https://git.io/vPdAb</a>
-    <pre>> It already prints ==> Installing <formula> [from <tap>] before installing each one.
+> Our aim is not to provide a Qt build that can be used to create relocatable and self-contained applications built on top of Qt. If that's the aim, we recommend the official Qt (binary) distribution that is optimized (and more appropriately configured) for this use case.
 
-Closing due to this.</pre>
+Indeed, well said.</pre>
   </div>
   <hr>
-  <div id="vPdAF">
-    <a href="#vPdAF"><time datetime="2016-10-20 06:56:14">2016-10-20 06:56:14</time></a>, <a target="_blank" href="https://git.io/vPdAF">https://git.io/vPdAF</a>
-    <pre>Great, thanks!</pre>
+  <div id="vPbXO">
+    <a href="#vPbXO"><time datetime="2016-10-23 11:16:54">2016-10-23 11:16:54</time></a>, <a target="_blank" href="https://git.io/vPbXO">https://git.io/vPbXO</a>
+    <pre>Thanks for your contribution to Homebrew! Without people like you submitting PRs we couldn't run this project. You rock!</pre>
   </div>
   <hr>
-  <div id="vPQdr">
-    <a href="#vPQdr"><time datetime="2016-10-20 06:54:11">2016-10-20 06:54:11</time></a>, <a target="_blank" href="https://git.io/vPQdr">https://git.io/vPQdr</a>
-    <pre>The test suite doesn't include Homebrew code.</pre>
+  <div id="vPbX3">
+    <a href="#vPbX3"><time datetime="2016-10-23 11:16:51">2016-10-23 11:16:51</time></a>, <a target="_blank" href="https://git.io/vPbX3">https://git.io/vPbX3</a>
+    <pre>Thanks for your contribution to Homebrew! Without people like you submitting PRs we couldn't run this project. You rock!</pre>
   </div>
   <hr>
-  <div id="vPdAd">
-    <a href="#vPdAd"><time datetime="2016-10-19 20:31:41">2016-10-19 20:31:41</time></a>, <a target="_blank" href="https://git.io/vPdAd">https://git.io/vPdAd</a>
-    <pre>I see. Can it be blank (and bind to localhost) by default? If not, yeh `orientdb` sounds good and using a `caveats` block to output it and `post_install` to configure it is best.</pre>
+  <div id="vPbXs">
+    <a href="#vPbXs"><time datetime="2016-10-23 11:15:30">2016-10-23 11:15:30</time></a>, <a target="_blank" href="https://git.io/vPbXs">https://git.io/vPbXs</a>
+    <pre>> is there any serious drawback in creating a few symlinks?
+
+We encourage upstream to rely on incorrect packaging behaviours. I'd rather avoid it as a result but will leave this open for a bit for other maintainers to disagree.</pre>
   </div>
   <hr>
-  <div id="vPHJJ">
-    <a href="#vPHJJ"><time datetime="2016-10-19 20:31:02">2016-10-19 20:31:02</time></a>, <a target="_blank" href="https://git.io/vPHJJ">https://git.io/vPHJJ</a>
-    <pre>No worries!</pre>
+  <div id="vPbXT">
+    <a href="#vPbXT"><time datetime="2016-10-23 11:12:02">2016-10-23 11:12:02</time></a>, <a target="_blank" href="https://git.io/vPbXT">https://git.io/vPbXT</a>
+    <pre>Removed it, thanks!</pre>
   </div>
   <hr>
-  <div id="vPHJn">
-    <a href="#vPHJn"><time datetime="2016-10-19 20:17:42">2016-10-19 20:17:42</time></a>, <a target="_blank" href="https://git.io/vPHJn">https://git.io/vPHJn</a>
-    <pre>Works fine either way; just for stubbing.</pre>
+  <div id="vPbXU">
+    <a href="#vPbXU"><time datetime="2016-10-23 10:27:43">2016-10-23 10:27:43</time></a>, <a target="_blank" href="https://git.io/vPbXU">https://git.io/vPbXU</a>
+    <pre>> Not convinced any "solution" is needed since this basically falls into the speculatively fixing bugs category right now.
+
+Agreed. If you have a specific issue with a formula, please let us know. Thanks!</pre>
   </div>
   <hr>
-  <div id="vP9Hr">
-    <a href="#vP9Hr"><time datetime="2016-10-19 18:17:03">2016-10-19 18:17:03</time></a>, <a target="_blank" href="https://git.io/vP9Hr">https://git.io/vP9Hr</a>
-    <pre>Doesn't seem so.</pre>
+  <div id="vPbXv">
+    <a href="#vPbXv"><time datetime="2016-10-23 10:02:16">2016-10-23 10:02:16</time></a>, <a target="_blank" href="https://git.io/vPbXv">https://git.io/vPbXv</a>
+    <pre>Thanks for your contribution to Homebrew! Without people like you submitting PRs we couldn't run this project. You rock!</pre>
   </div>
   <hr>
-  <div id="vP9Hw">
-    <a href="#vP9Hw"><time datetime="2016-10-19 18:15:47">2016-10-19 18:15:47</time></a>, <a target="_blank" href="https://git.io/vP9Hw">https://git.io/vP9Hw</a>
-    <pre>@Eitot Done, thanks!</pre>
+  <div id="vPbXf">
+    <a href="#vPbXf"><time datetime="2016-10-23 10:02:03">2016-10-23 10:02:03</time></a>, <a target="_blank" href="https://git.io/vPbXf">https://git.io/vPbXf</a>
+    <pre>I'm afraid I'm not sure what the problem is here. You are probably best to take it up with `mozjpeg`.</pre>
   </div>
   <hr>
-  <div id="vP9S8">
-    <a href="#vP9S8"><time datetime="2016-10-19 18:14:51">2016-10-19 18:14:51</time></a>, <a target="_blank" href="https://git.io/vP9S8">https://git.io/vP9S8</a>
-    <pre>Let's continue in the original issue in https://github.com/Homebrew/homebrew-core/issues/3958.</pre>
+  <div id="vPbXJ">
+    <a href="#vPbXJ"><time datetime="2016-10-23 09:55:27">2016-10-23 09:55:27</time></a>, <a target="_blank" href="https://git.io/vPbXJ">https://git.io/vPbXJ</a>
+    <pre>Thanks for your contribution to Homebrew! Without people like you submitting PRs we couldn't run this project. You rock!</pre>
   </div>
   <hr>
-  <div id="vP9HH">
-    <a href="#vP9HH"><time datetime="2016-10-19 18:14:18">2016-10-19 18:14:18</time></a>, <a target="_blank" href="https://git.io/vP9HH">https://git.io/vP9HH</a>
-    <pre>No worries, thanks for letting us know.</pre>
+  <div id="vPbPb">
+    <a href="#vPbPb"><time datetime="2016-10-23 09:34:37">2016-10-23 09:34:37</time></a>, <a target="_blank" href="https://git.io/vPbPb">https://git.io/vPbPb</a>
+    <pre>@jirutka Ping on this.</pre>
   </div>
   <hr>
-  <div id="vP96o">
-    <a href="#vP96o"><time datetime="2016-10-19 18:12:58">2016-10-19 18:12:58</time></a>, <a target="_blank" href="https://git.io/vP96o">https://git.io/vP96o</a>
-    <pre>Please try to resolve your `brew doctor` warnings and try again.</pre>
+  <div id="vPbPN">
+    <a href="#vPbPN"><time datetime="2016-10-23 09:34:04">2016-10-23 09:34:04</time></a>, <a target="_blank" href="https://git.io/vPbPN">https://git.io/vPbPN</a>
+    <pre>Cool. Can you please submit this as a bug to the upstream developers of this project and add a link to the upstream bug submission and explanation of why the chmod is needed in a comment in the formula file. Thanks!</pre>
   </div>
   <hr>
-  <div id="vP9SC">
-    <a href="#vP9SC"><time datetime="2016-10-19 18:07:41">2016-10-19 18:07:41</time></a>, <a target="_blank" href="https://git.io/vP9SC">https://git.io/vP9SC</a>
-    <pre>Thanks for the report! Opened a PR to fix in https://github.com/Homebrew/homebrew-bundle/pull/219.</pre>
+  <div id="vPbPA">
+    <a href="#vPbPA"><time datetime="2016-10-23 09:33:28">2016-10-23 09:33:28</time></a>, <a target="_blank" href="https://git.io/vPbPA">https://git.io/vPbPA</a>
+    <pre>Test is failing: https://bot.brew.sh/job/Homebrew%20Core/9797/version=any_sierra/testReport/junit/brew-test-bot/sierra/test_apache_zeppelin/</pre>
+  </div>
+  <hr>
+  <div id="vPbPx">
+    <a href="#vPbPx"><time datetime="2016-10-23 09:32:12">2016-10-23 09:32:12</time></a>, <a target="_blank" href="https://git.io/vPbPx">https://git.io/vPbPx</a>
+    <pre>`cd "src/github.com/concourse/fly"` and then skip the `do`, `end` and indentation.</pre>
+  </div>
+  <hr>
+  <div id="vPbPp">
+    <a href="#vPbPp"><time datetime="2016-10-23 09:31:21">2016-10-23 09:31:21</time></a>, <a target="_blank" href="https://git.io/vPbPp">https://git.io/vPbPp</a>
+    <pre>We want a bottle for a `go` application.</pre>
+  </div>
+  <hr>
+  <div id="vPbPh">
+    <a href="#vPbPh"><time datetime="2016-10-23 09:30:58">2016-10-23 09:30:58</time></a>, <a target="_blank" href="https://git.io/vPbPh">https://git.io/vPbPh</a>
+    <pre>> because some configure scripts are looking for -qt5
+
+Which ones?</pre>
+  </div>
+  <hr>
+  <div id="vPbPj">
+    <a href="#vPbPj"><time datetime="2016-10-23 09:28:01">2016-10-23 09:28:01</time></a>, <a target="_blank" href="https://git.io/vPbPj">https://git.io/vPbPj</a>
+    <pre>`macOS`</pre>
+  </div>
+  <hr>
+  <div id="vPbXe">
+    <a href="#vPbXe"><time datetime="2016-10-23 09:25:27">2016-10-23 09:25:27</time></a>, <a target="_blank" href="https://git.io/vPbXe">https://git.io/vPbXe</a>
+    <pre>What does `brew info libtool` say?</pre>
+  </div>
+  <hr>
+  <div id="vPbP7">
+    <a href="#vPbP7"><time datetime="2016-10-23 09:23:06">2016-10-23 09:23:06</time></a>, <a target="_blank" href="https://git.io/vPbP7">https://git.io/vPbP7</a>
+    <pre>> one for when Xcode is installed and one for when it's not, or one for when the CLT is installed and one for when it's not, and then set PKG_CONFIG_PATH accordingly.
+
+This would be my preferred solution.</pre>
+  </div>
+  <hr>
+  <div id="vPbP5">
+    <a href="#vPbP5"><time datetime="2016-10-23 09:22:17">2016-10-23 09:22:17</time></a>, <a target="_blank" href="https://git.io/vPbP5">https://git.io/vPbP5</a>
+    <pre>Try to `brew reinstall libtool; brew reinstall mozjpeg`. Thanks!</pre>
+  </div>
+  <hr>
+  <div id="vPbPd">
+    <a href="#vPbPd"><time datetime="2016-10-23 09:21:03">2016-10-23 09:21:03</time></a>, <a target="_blank" href="https://git.io/vPbPd">https://git.io/vPbPd</a>
+    <pre>In that case it's intentional; auto-update only updates taps with formulae.</pre>
+  </div>
+  <hr>
+  <div id="vPbPF">
+    <a href="#vPbPF"><time datetime="2016-10-23 09:20:02">2016-10-23 09:20:02</time></a>, <a target="_blank" href="https://git.io/vPbPF">https://git.io/vPbPF</a>
+    <pre>This is possible but we'll need someone to add a pull request to do so to Homebrew/brew to add support for `depends_on :node`/`NodeRequirement`.</pre>
+  </div>
+  <hr>
+  <div id="vPbPQ">
+    <a href="#vPbPQ"><time datetime="2016-10-23 09:00:59">2016-10-23 09:00:59</time></a>, <a target="_blank" href="https://git.io/vPbPQ">https://git.io/vPbPQ</a>
+    <pre>> as we can't guarantee that /usr/local/bin isn't the CLT stub
+
+We kinda can guarantee that. It's a safe assumption that `/usr/bin/git` is the only case that may be a stub.</pre>
+  </div>
+  <hr>
+  <div id="vPbPH">
+    <a href="#vPbPH"><time datetime="2016-10-23 08:50:43">2016-10-23 08:50:43</time></a>, <a target="_blank" href="https://git.io/vPbPH">https://git.io/vPbPH</a>
+    <pre>@woodruffw Given the `echo` is on `stderr` I think `2>/dev/null` on each of these early Git invocations would make sense. I think `brew update` and `brew analytics` are the only cases where we should demand Git and fail hard otherwise. I do agree with you that longer-term it may just be a better idea to remove this `echo` from the Git shim, return a failing exit code anyway and move the logic to `brew update` and `brew analytics`.</pre>
+  </div>
+  <hr>
+  <div id="vPbPD">
+    <a href="#vPbPD"><time datetime="2016-10-23 08:38:04">2016-10-23 08:38:04</time></a>, <a target="_blank" href="https://git.io/vPbPD">https://git.io/vPbPD</a>
+    <pre>In fact: like you did below with replacements 😆 </pre>
   </div>
   <hr>
   </body>
