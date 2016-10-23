@@ -1,5 +1,7 @@
+{%- macro date(comment) -%}{{ comment.created_at.strftime('%Y-%m-%d') }}{%- endmacro -%}
 {%- macro datetime(comment) -%}{{ comment.created_at.strftime('%Y-%m-%d %H:%M:%S') }}{%- endmacro -%}
 {%- macro id(comment) -%}{{ comment.short_url.split('/')[-1] }}{%- endmacro -%}
+{%- macro permalink(comment) -%}{%- set year, month, day = date(comment).split('-') -%}../{{ year }}/{{ month }}/{{ day }}/#{{ id(comment) }}{%- endmacro -%}
 {%- macro time_tag(datetime) -%}<time datetime="{{ datetime }}">{{ datetime }}</time>{%- endmacro -%}
 {%- macro verbatim_link(link) -%}<a target="_blank" href="{{ link }}">{{ link }}</a>{%- endmacro -%}
 <!DOCTYPE html>
@@ -13,7 +15,7 @@
   <h1><a href="../" class="undecorated">MrMarchive</a> latest</h1>
   {% for comment in comments -%}
   <div id="{{ id(comment) }}">
-    <a href="#{{ id(comment) }}">{{ time_tag(datetime(comment)) }}</a>, {{ verbatim_link(comment.short_url) }}
+    <a href="#{{ id(comment) }}">{{ time_tag(datetime(comment)) }}</a> (<a href="{{ permalink(comment) }}">permalink</a>), {{ verbatim_link(comment.short_url) }}
     <pre>{{ comment.body.replace('\r', '') }}</pre>
   </div>
   <hr>
