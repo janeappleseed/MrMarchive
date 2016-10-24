@@ -88,7 +88,7 @@ def build_index(dates):
     return sum([count for _, count in dates])
 
 def main():
-    utils.fetch_comments()
+    utils.fetch_comments(force=True)
     utils.ensure_short_urls_all()
     earliest_date = utils.earliest_date()
     today = datetime.datetime.utcnow().date()
