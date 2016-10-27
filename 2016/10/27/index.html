@@ -8,7 +8,55 @@
 </head>
 <body>
   <h1><a href="../../../" class="undecorated">MrMarchive</a> <a href="../../" class="undecorated">2016</a>-<a href="../" class="undecorated">10</a>-27</h1>
-  <p>1 comment.</p>
+  <p>7 comments.</p>
+  <hr>
+  <div id="vXURo">
+    <a href="#vXURo"><time datetime="2016-10-27 17:47:48">2016-10-27 17:47:48</time></a>, <a target="_blank" href="https://git.io/vXURo">https://git.io/vXURo</a>
+    <pre>> That structure is used all over the place
+
+Yes but we want to avoid it when it's possible (as it isn't always possible).
+
+Please put it back to how it was.</pre>
+  </div>
+  <hr>
+  <div id="vXURK">
+    <a href="#vXURK"><time datetime="2016-10-27 17:43:23">2016-10-27 17:43:23</time></a>, <a target="_blank" href="https://git.io/vXURK">https://git.io/vXURK</a>
+    <pre>CC @tdsmith and @ilovezfs who may know this</pre>
+  </div>
+  <hr>
+  <div id="vXURi">
+    <a href="#vXURi"><time datetime="2016-10-27 17:42:37">2016-10-27 17:42:37</time></a>, <a target="_blank" href="https://git.io/vXURi">https://git.io/vXURi</a>
+    <pre>> Restoring --with-ffplay simply isn't a regression
+
+`depends_on "sdl2" if build.with?("ffplay")` is buggy and `depends_on "sdl2" => :optional` is not so it will cause a regression.
+
+> I myself lost --with-ffplay somewhere along the upgrade path which shouldn't have happened.
+
+I agree this should not happen. If you can figure out how to reproduce an issue or PR would be welcome.</pre>
+  </div>
+  <hr>
+  <div id="vXURw">
+    <a href="#vXURw"><time datetime="2016-10-27 17:24:23">2016-10-27 17:24:23</time></a>, <a target="_blank" href="https://git.io/vXURw">https://git.io/vXURw</a>
+    <pre>> Restore the --with-ffplay option and deprecate --with-sdl/--with-sdl2 (recently added). Whatever backend ffplay uses is just an implementation detail, users should not need to know it (and most don't), and using the dependency name in the option name not only causes user confusion (especially after years of --with-ffplay which is the only name that makes sense), it's also a headache when upstream switches backend, as is happening with this release.
+
+This creates issues with our dependency system so until we have a `variant do` or similar in Homebrew/brew we should avoid regressing back on these.
+
+> Drop the AAC encoding caveats specific to the FFmpeg 3.0 release. It's been out for the better part of a year and shouldn't be news anymore. Users concerned with this caveat should have migrated already.
+
+👍 </pre>
+  </div>
+  <hr>
+  <div id="vXURr">
+    <a href="#vXURr"><time datetime="2016-10-27 17:21:45">2016-10-27 17:21:45</time></a>, <a target="_blank" href="https://git.io/vXURr">https://git.io/vXURr</a>
+    <pre>> I could rewrite this function to simply sort the symbols using a different comparison operator, which would make this function tidier and have the desired behaviour effect of this PR. Would that suit you?
+
+Yes, something like that would be good, agreed with the clunkiness.</pre>
+  </div>
+  <hr>
+  <div id="vXURV">
+    <a href="#vXURV"><time datetime="2016-10-27 17:03:24">2016-10-27 17:03:24</time></a>, <a target="_blank" href="https://git.io/vXURV">https://git.io/vXURV</a>
+    <pre>Ok, makes sense. I'm 👍 to fixing that but I'm not sure this is the right location for a fix.</pre>
+  </div>
   <hr>
   <div id="vXJN2">
     <a href="#vXJN2"><time datetime="2016-10-27 14:09:18">2016-10-27 14:09:18</time></a>, <a target="_blank" href="https://git.io/vXJN2">https://git.io/vXJN2</a>
