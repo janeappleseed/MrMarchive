@@ -21,7 +21,10 @@
   {% endfor -%}
   </ul>
   <hr>
-  <p>Last updated: {{ last_updated }}.</p>
+  <footer>
+    <span class="left">Last updated: <time datetime="{{ last_updated }}">{{ last_updated }} UTC</time>.</span>
+    <span class="right"><a target="_blank" href="https://github.com/janeappleseed/MrMarchive">GitHub</a></span>
+  </footer>
 </body>
 </html>
 {#- Local Variables: -#}

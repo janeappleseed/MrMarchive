@@ -83,7 +83,7 @@ def build_index(dates):
             template = jinja2.Template(fin.read())
             fout.write(template.render(
                 dates=dates,
-                last_updated=datetime.datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S UTC'),
+                last_updated=datetime.datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S'),
             ))
     return sum([count for _, count in dates])
 

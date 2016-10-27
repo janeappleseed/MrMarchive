@@ -30,3 +30,15 @@ hr {
     border: 0;
     border-top: 1px solid #ccc;
 }
+
+footer {
+    margin: 1em 0;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
