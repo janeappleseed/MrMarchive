@@ -5,6 +5,19 @@ body {
     width: 800px;
 }
 
+@media (max-width: 850px) {
+    body {
+        font-size: 12px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 640px) {
+    body {
+        font-size: 11px;
+    }
+}
+
 h1 {
     font-size: 200%;
 }
